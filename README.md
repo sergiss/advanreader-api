@@ -1,2 +1,2 @@
 # advanreader-api
-Library to communicate with Keonn AdvanReader RFID readers
+Library to communicate with Keonn AdvanReader RFID reader

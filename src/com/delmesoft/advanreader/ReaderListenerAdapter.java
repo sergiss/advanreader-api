@@ -73,15 +73,4 @@ public abstract class ReaderListenerAdapter implements ReaderListener {
 		
 	}
 
-	/*@Override
-	public void onBufferOverflow() {
-		// TODO Auto-generated method stub
-	}
-
-	@Override
-	public void onBufferWarning(double percentFull) {
-		// TODO Auto-generated method stub
-		
-	}*/
-
 }

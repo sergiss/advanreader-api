@@ -239,7 +239,7 @@ public class AdvanReader implements Reader {
 
 			setAntennaConfiguration(device, port, settings);
 
-			setWritePower(device, port, 31.5);
+			setWritePower(device, port, settings.getWritePower());
 
 			setParameter(device, port, "GEN2_SESSION", GEN2_SESSION[settings.getSession()]);
 			setParameter(device, port, "GEN2_TARGET" , GEN2_TARGET[settings.getSearchModeIndex()]);

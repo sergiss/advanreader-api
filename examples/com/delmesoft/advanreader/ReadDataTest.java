@@ -92,7 +92,6 @@ public class ReadDataTest {
 				System.out.printf("%s (code: %d): %s\n", message, result, read);
 			}
 				
-
 		});
 
 		reader.connect();

@@ -40,6 +40,8 @@ public class Settings {
 	private double[] txPower = { 30, 30, 30, 30 };
 	private double[] rxSensitivity = { -70, -70, -70, -70 };
 
+	private double writePower = 31.5;
+
 	private int session = 1;
 	private int readerModeIndex;
 	private int searchModeIndex;
@@ -84,6 +86,14 @@ public class Settings {
 		this.rxSensitivity = rxSensitivity;
 	}
 
+	public double getWritePower() {
+		return writePower;
+	}
+
+	public void setWritePower(double writePower) {
+		this.writePower = writePower;
+	}
+
 	public int getSession() {
 		return session;
 	}
@@ -121,6 +131,8 @@ public class Settings {
 		builder.append(Arrays.toString(txPower));
 		builder.append(", rxSensitivity=");
 		builder.append(Arrays.toString(rxSensitivity));
+		builder.append(", writePower=");
+		builder.append(writePower);
 		builder.append(", session=");
 		builder.append(session);
 		builder.append(", readerModeIndex=");
@@ -130,5 +142,5 @@ public class Settings {
 		builder.append("]");
 		return builder.toString();
 	}
-	
+
 }
